@@ -24,6 +24,6 @@ const average = (arr) => {
   }
   const result = Math.round(total / quant);
   return quant === 0 ? undefined : result;
-}
+};
 
 module.exports = average;
