@@ -22,7 +22,7 @@ Tenho ${number} anos,
 trabalho na Trybe e mando muito em programação!
 #VQV!`;
 
-  if (typeof str === 'string' && typeof number === 'number') {
+  if (str && number) {
     return newStr;
   }
 };
