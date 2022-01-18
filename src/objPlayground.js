@@ -38,11 +38,18 @@ const calculator = (number1, number2) => {
     sum: number1 + number2,
     mult: number1 * number2,
     div: Math.floor(number1 / number2),
-    sub: Math.floor(number1 - number2),
+    sub: number1 - number2,
   };
   return calc;
 };
 
-const arrayGenerator = (type, object) => {};
+const arrayGenerator = (type, object) => {
+  if (type === 'values') {
+    return Object.values(object);
+  } else if (type === 'keys') {
+    return Object.keys(object);
+  }
+  return Object.entries(object);
+};
 
 module.exports = { calculator, arrayGenerator };
